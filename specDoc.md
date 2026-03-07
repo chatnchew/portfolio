@@ -36,7 +36,6 @@ Build a performant, accessible React SPA that preserves the existing visual iden
 ### 2.3 Existing Assets
 1. Brand images
 - `assets/images/caryn harris logo.png`
-- `assets/images/caryn harris logo.svg` (vector format, preferred for React)
 
 2. Resume
 - `assets/Caryn Harris 2026.pdf`
@@ -181,13 +180,12 @@ Required sections:
 
 ### 6.1 Brand/Typography
 Logo:
-1. Use `assets/images/caryn harris logo.svg` (vector format) for React implementation.
-2. PNG version available as fallback if needed.
+1. Use `assets/images/caryn harris logo.png` for React implementation.
 
 Fonts:
-1. `disclaimerplain` for expressive heading/nav treatments.
-2. `far_outregular` for accent or display use.
-3. Add a readable fallback body stack for long text (for example: `Georgia, 'Times New Roman', serif` or a chosen sans-serif stack).
+1. `disclaimerplain` for headers.
+2. `far_outregular` for navigation links.
+3. Add a readable fallback body stack for long text (`Arial`).
 
 ### 6.2 Layout Behavior
 1. Maintain centered composition from current home concept.
@@ -219,7 +217,7 @@ Define CSS custom properties in `tokens.css`:
 ### 6.5 Interaction
 1. Clear link hover/focus states.
 2. Links scale up slightly on hover (e.g., `transform: scale(1.05)`) with smooth transition.
-3. Soft click sound effect plays when links are clicked.
+3. Click sound effect plays when links are clicked.
 4. Keyboard-visible focus ring for all interactive elements.
 5. Page transitions use fade-in/fade-out effect when navigating between routes.
 6. Subtle entrance transitions only where helpful.
@@ -290,7 +288,7 @@ Use a simple config object for:
 ### Phase 1: Foundation
 1. Initialize React + Vite app structure.
 2. Move assets into `src/assets` (or `public/assets`) with consistent paths:
-   - Logo: `assets/images/caryn harris logo.svg`
+   - Logo: `assets/images/caryn harris logo.png`
    - Resume: `assets/Caryn Harris 2026.pdf`
    - Fonts: `assets/*.woff` and `assets/*.woff2`
    - Sound: `assets/842609__ui-hater2012__menuclick.wav`
