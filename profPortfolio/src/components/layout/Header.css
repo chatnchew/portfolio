@@ -1,0 +1,30 @@
+.site-header {
+  padding: var(--space-5) var(--space-4);
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color var(--transition-base);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.header-theme-toggle {
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    padding: var(--space-4) var(--space-3);
+  }
+  
+  .header-container {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+}

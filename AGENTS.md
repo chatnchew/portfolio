@@ -142,6 +142,7 @@ export default MyComponent;
 - **Fragments**: Use `<>` to avoid extra DOM nodes
 - **Conditional rendering**: Use ternary or `&&` operator, avoid `if` statements in JSX
 - **Destructure props**: Destructure in function parameters for clarity
+- **File count**: Use a minimal amount of total files for the entire project
 
 ### JavaScript/TypeScript Standards
 - Use **ES6+ syntax**: arrow functions, destructuring, spread operator, template literals

@@ -1,0 +1,62 @@
+.credits-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.credits-container h1 {
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--space-4);
+  font-family: var(--font-header);
+}
+
+.credits-intro {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-6);
+  line-height: 1.7;
+}
+
+.credits-section {
+  margin-bottom: var(--space-6);
+  padding: var(--space-5);
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+}
+
+.credits-section h2 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-4);
+  font-family: var(--font-header);
+  color: var(--link-color);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: var(--space-2);
+}
+
+.credit-item {
+  margin-bottom: var(--space-4);
+}
+
+.credit-item:last-child {
+  margin-bottom: 0;
+}
+
+.credit-item h3 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-2);
+}
+
+.credit-item p {
+  margin-bottom: var(--space-2);
+  color: var(--text-secondary);
+}
+
+.credit-item a {
+  color: var(--link-color);
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.credit-item a:hover {
+  color: var(--link-hover);
+}
