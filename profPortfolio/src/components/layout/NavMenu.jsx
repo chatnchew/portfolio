@@ -14,22 +14,22 @@ const NavMenu = () => {
       <ul>
         <li>
           <Link to="/" onClick={handleLinkClick}>
-            home
+            Home
           </Link>
         </li>
         <li>
           <Link to="/about" onClick={handleLinkClick}>
-            about & resume
+            About & Resume
           </Link>
         </li>
         <li>
           <Link to="/portfolio" onClick={handleLinkClick}>
-            portfolio
+            Portfolio
           </Link>
         </li>
         <li>
           <Link to="/contact" onClick={handleLinkClick}>
-            contact
+            Contact
           </Link>
         </li>
       </ul>

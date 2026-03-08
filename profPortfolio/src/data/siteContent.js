@@ -1,34 +1,51 @@
 const siteContent = {
   hero: {
     title: "Caryn Harris",
-    subtitle: "Full Stack Software Developer by trade, artist by nature",
+    subtitle: "Full Stack Software Developer by trade, Artist by nature",
     intro:
       "Creating innovative web experiences with a focus on user-centered design and clean, efficient code.",
   },
   about: {
     bio: [
-      "Howdy! I'm Caryn Harris, a full stack developer passionate about creating elegantly architected, beautiful and accessible software.",
-      "With a background in art and computer engineering, I bring a unique perspective to every project, developing creative solutions to technical problems.",
-      "I specialize in React, SQL, and modern web technologies, with a keen eye for detail and a commitment to delivering exceptional user experiences.",
+      "Howdy! I'm Caryn Harris, a full stack developer passionate about creating elegantly architected, beautiful and accessible software. With a background in art and computer engineering, I bring a unique perspective to every project, developing creative solutions to technical problems.",
+      "I also have noted experience in other professional venues and in customer-facing roles. I know how to bridge the gap between what is technically possible and what will serve the business' needs most effectively!",
+      "I specialize in React, SQL, and modern web technologies, with a keen eye for detail and a commitment to delivering exceptional user experiences. I'm eager to learn more and to join an organization where I can grow my skills and find a specialization to fall in love with.",
     ],
     skills: [
       "React & React Router",
-      "JavaScript ES6+",
+      "JavaScript ES6+ & jQuery",
       "HTML5 & CSS3",
       "Node.js & Express",
-      "MongoDB & SQL",
+      "MongoDB & PostgreSQL",
       "Git & Version Control",
       "Responsive Design",
-      "UI/UX Design",
+      "UI/UX Design & Figma",
       "Vite & Modern Build Tools",
+      "RESTful APIs & JSON",
+      "Testing & Debugging",
+      "Chrome DevTools",
     ],
     experience: [
       {
         title: "Full Stack Developer",
         company: "Various Projects",
-        period: "2023 - Present",
+        period: "2026 - Present",
         description:
-          "Developing modern web applications with React, Node.js, and MongoDB.",
+          "Developing modern web applications with React, Node.js, Express.js, and MongoDB.",
+      },
+      {
+        title: "Insurance Operations Supervisor",
+        company: "Marsh",
+        period: "2025",
+        description:
+          "Mobilized a team of 12 corporate insurance account representatives during a departmental transformation, reducing turn over and retaining 80% of the team.",
+      },
+      {
+        title: "Part-Time Operations Researche",
+        company: "Brickhaus3 LLC",
+        period: "2024 - Present",
+        description:
+          "Authored communications with event planners, cigar lounge owners, entertainment companies and other related businesses to contribute to the growth of the organization, resulting in a 100% increase in paid events.",
       },
     ],
     education: [
