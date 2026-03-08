@@ -1,7 +1,7 @@
 const siteContent = {
   hero: {
     title: "Caryn Harris",
-    subtitle: "Full Stack Developer & Designer",
+    subtitle: "Full Stack Software Developer by trade, artist by nature",
     intro:
       "Creating innovative web experiences with a focus on user-centered design and clean, efficient code.",
   },
