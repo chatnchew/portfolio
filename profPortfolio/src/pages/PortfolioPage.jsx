@@ -42,12 +42,21 @@ const PortfolioPage = () => {
       <div className="main-content-area">
         <h1>Portfolio</h1>
         <p className="portfolio-intro">
-          Here are some of the projects I've worked on. Each project represents a unique challenge and learning experience.
+          Here are some of the projects I've worked on!
         </p>
 
         <div className="projects-grid">
           {filteredProjects.map(project => (
             <article key={project.id} className="project-item">
+              {project.image && (
+                <div className="project-image-container">
+                  <img 
+                    src={project.image} 
+                    alt={`${project.title} logo`} 
+                    className="project-image"
+                  />
+                </div>
+              )}
               <div className="project-content">
                 <h2>{project.title}</h2>
                 <p className="project-role">{project.role}</p>

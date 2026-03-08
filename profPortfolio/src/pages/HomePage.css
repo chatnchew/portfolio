@@ -24,11 +24,6 @@
   margin: 0 auto var(--space-5);
 }
 
-[data-theme="dark"] .logo {
-  background-color: #ffffff;
-  padding: 0.25em;
-}
-
 .hero-title {
   font-family: var(--font-header);
   font-size: var(--font-size-5xl);

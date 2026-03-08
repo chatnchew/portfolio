@@ -88,6 +88,24 @@
   box-shadow: var(--shadow-lg);
 }
 
+.project-image-container {
+  margin-bottom: var(--space-4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-3);
+  background-color: var(--bg-primary);
+  border-radius: var(--radius-md);
+}
+
+.project-image {
+  max-width: 200px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
 .project-content h2 {
   font-size: var(--font-size-2xl);
   margin-bottom: var(--space-2);

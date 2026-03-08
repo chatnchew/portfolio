@@ -1,3 +1,5 @@
+import cliquelogo from '../assets/images/clique logo.png';
+
 const projects = [
   {
     id: 'clique-app',
@@ -5,7 +7,7 @@ const projects = [
     summary: 'A social networking platform designed for platonic connection, connecting people based on shared interests.',
     role: 'Full Stack Developer',
     stack: ['React', 'Node.js', 'MongoDB', 'Express'],
-    image: null, // Add image path when available
+    image: cliquelogo,
     liveUrl: 'http://cliqueapp.site/',
     repoUrl: 'https://github.com/chatnchew/Clique-Capstone-Project',
     featured: true,

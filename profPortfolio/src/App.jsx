@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { ThemeProvider } from './contexts/ThemeContext';
 import AppLayout from './components/layout/AppLayout';
 import HomePage from './pages/HomePage';
 import AboutResumePage from './pages/AboutResumePage';
@@ -42,7 +43,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  );
 }
 
 export default App

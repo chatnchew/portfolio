@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import useTheme from '../../hooks/useTheme';
+import { useTheme } from '../../contexts/ThemeContext';
 import './ThemeToggle.css';
 
 const ThemeToggle = ({ className }) => {
