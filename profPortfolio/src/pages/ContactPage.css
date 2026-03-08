@@ -67,8 +67,8 @@
 
 .social-link {
   padding: var(--space-3) var(--space-5);
-  background-color: var(--link-color);
-  color: white !important;
+  background-color: var(--button-bg);
+  color: var(--button-text) !important;
   border-radius: var(--radius-md);
   font-weight: 500;
   text-decoration: none !important;
@@ -76,7 +76,7 @@
 }
 
 .social-link:hover {
-  background-color: var(--link-hover);
+  background-color: var(--button-hover-bg);
   transform: scale(1.05);
 }
 

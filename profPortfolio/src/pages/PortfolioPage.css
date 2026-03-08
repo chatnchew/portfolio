@@ -48,9 +48,9 @@
 }
 
 .sidenav button.active {
-  background-color: var(--link-color);
-  color: white;
-  border-color: var(--link-color);
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border-color: var(--button-bg);
 }
 
 .main-content-area {
@@ -135,8 +135,8 @@
 
 .project-link {
   padding: var(--space-2) var(--space-4);
-  background-color: var(--link-color);
-  color: white;
+  background-color: var(--button-bg);
+  color: var(--button-text);
   border-radius: var(--radius-md);
   font-size: var(--font-size-base);
   font-weight: 500;
@@ -144,9 +144,9 @@
 }
 
 .project-link:hover {
-  background-color: var(--link-hover);
+  background-color: var(--button-hover-bg);
   transform: scale(1.05);
-  color: white;
+  color: var(--button-text);
 }
 
 .no-projects {

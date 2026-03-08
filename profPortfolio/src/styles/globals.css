@@ -25,23 +25,29 @@
   --text-primary: #212529;
   --text-secondary: #6c757d;
   --text-muted: #adb5bd;
-  --link-color: #0d6efd;
-  --link-hover: #0a58ca;
+  --link-color: #000000;
+  --link-hover: #333333;
   --border-color: #dee2e6;
   --shadow-color: rgba(0, 0, 0, 0.1);
+  --button-bg: #000000;
+  --button-text: #ffffff;
+  --button-hover-bg: #333333;
 }
 
 [data-theme="dark"] {
   /* Dark Mode */
-  --bg-primary: #212529;
+  --bg-primary: #161616;
   --bg-secondary: #343a40;
   --text-primary: #f8f9fa;
   --text-secondary: #adb5bd;
   --text-muted: #6c757d;
-  --link-color: #6ea8fe;
-  --link-hover: #9ec5fe;
+  --link-color: #ffffff;
+  --link-hover: #cccccc;
   --border-color: #495057;
   --shadow-color: rgba(0, 0, 0, 0.5);
+  --button-bg: #ffffff;
+  --button-text: #000000;
+  --button-hover-bg: #cccccc;
 }
 
 /* Global Reset */

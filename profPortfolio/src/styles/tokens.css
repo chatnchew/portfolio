@@ -22,14 +22,14 @@
   --font-size-5xl: 3rem;     /* 48px */
 
   /* Font Families */
-  --font-header: 'disclaimerplain', Arial, sans-serif;
+  --font-header: 'far_outregular', Arial, sans-serif;
   --font-nav: 'far_outregular', Arial, sans-serif;
   --font-body: Arial, Helvetica, sans-serif;
 
   /* Border Radius */
-  --radius-sm: 0.25rem; /* 4px */
-  --radius-md: 0.5rem;  /* 8px */
-  --radius-lg: 1rem;    /* 16px */
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
 
   /* Shadows */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);

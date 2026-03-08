@@ -29,8 +29,8 @@
 .home-link {
   display: inline-block;
   padding: var(--space-3) var(--space-6);
-  background-color: var(--link-color);
-  color: white;
+  background-color: var(--button-bg);
+  color: var(--button-text);
   border-radius: var(--radius-md);
   font-size: var(--font-size-lg);
   font-weight: 500;
@@ -38,9 +38,9 @@
 }
 
 .home-link:hover {
-  background-color: var(--link-hover);
+  background-color: var(--button-hover-bg);
   transform: scale(1.05);
-  color: white;
+  color: var(--button-text);
 }
 
 @media (max-width: 768px) {
