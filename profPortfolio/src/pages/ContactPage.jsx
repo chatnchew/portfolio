@@ -15,7 +15,7 @@ const ContactPage = () => {
         <h1>Get In Touch</h1>
         <p className="contact-intro">
           I'm always interested in hearing about new projects and opportunities. 
-          Feel free to reach out!
+          Feel free to drop me a line!
         </p>
 
         <div className="contact-card">

@@ -6,9 +6,9 @@ const siteContent = {
   },
   about: {
     bio: [
-      'Hi! I\'m Caryn Harris, a full stack developer passionate about creating beautiful, accessible web applications.',
-      'With a background in design and development, I bring a unique perspective to every project, ensuring that both form and function work in harmony.',
-      'I specialize in React, Node.js, and modern web technologies, with a keen eye for detail and a commitment to delivering exceptional user experiences.',
+      'Howdy! I\'m Caryn Harris, a full stack developer passionate about creating elegantly architected, beautiful and accessible software.',
+      'With a background in art and computer engineering, I bring a unique perspective to every project, developing creative solutions to technical problems.',
+      'I specialize in React, SQL, and modern web technologies, with a keen eye for detail and a commitment to delivering exceptional user experiences.',
     ],
     skills: [
       'React & React Router',
@@ -18,7 +18,6 @@ const siteContent = {
       'MongoDB & SQL',
       'Git & Version Control',
       'Responsive Design',
-      'Accessibility (WCAG 2.1)',
       'UI/UX Design',
       'Vite & Modern Build Tools',
     ],
@@ -40,10 +39,10 @@ const siteContent = {
     resumeUrl: '/assets/Caryn Harris 2026.pdf',
   },
   contact: {
-    email: 'contact@carynharris.dev',
+    email: 'caryn.harris98@gmail.com',
     social: {
-      github: 'https://github.com/carynharris',
-      linkedin: 'https://linkedin.com/in/carynharris',
+      github: 'https://github.com/chatnchew',
+      linkedin: 'https://linkedin.com/in/carynharris98',
     },
   },
 };
