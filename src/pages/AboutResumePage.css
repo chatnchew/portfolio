@@ -83,7 +83,6 @@
   width: 250px;
   height: auto;
   border-radius: var(--radius-lg);
-  border: 3px solid var(--border-color);
   flex-shrink: 0;
   object-fit: cover;
   transition: transform var(--transition-base);
