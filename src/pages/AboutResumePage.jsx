@@ -1,9 +1,13 @@
 import siteContent from '../data/siteContent';
 import useSound from '../hooks/useSound';
+import { useTheme } from '../contexts/ThemeContext';
+import carynPortrait from '../assets/images/caryn portrait.PNG';
+import carynPortraitDark from '../assets/images/caryn portrait darkmode.PNG';
 import './AboutResumePage.css';
 
 const AboutResumePage = () => {
   const { playClickSound } = useSound();
+  const { theme } = useTheme();
 
   const handleLinkClick = () => {
     playClickSound();
@@ -27,9 +31,18 @@ const AboutResumePage = () => {
 
         <section id="bio" className="content-section">
           <h2>Biography</h2>
-          {siteContent.about.bio.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
+          <div className="bio-content">
+            <img 
+              src={theme === 'light' ? carynPortrait : carynPortraitDark}
+              alt="Caryn Harris Portrait"
+              className="portrait-image"
+            />
+            <div className="bio-text">
+              {siteContent.about.bio.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+          </div>
         </section>
 
         <section id="skills" className="content-section">

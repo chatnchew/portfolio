@@ -73,6 +73,31 @@
   margin-bottom: var(--space-2);
 }
 
+.bio-content {
+  display: flex;
+  gap: var(--space-6);
+  align-items: flex-start;
+}
+
+.portrait-image {
+  width: 250px;
+  height: auto;
+  border-radius: var(--radius-lg);
+  border: 3px solid var(--border-color);
+  flex-shrink: 0;
+  object-fit: cover;
+  transition: transform var(--transition-base);
+}
+
+.portrait-image:hover {
+  transform: scale(1.02);
+}
+
+.bio-text {
+  flex: 1;
+  min-width: 0;
+}
+
 .skills-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -157,6 +182,16 @@
 
   .sidenav li {
     margin-bottom: 0;
+  }
+
+  .bio-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portrait-image {
+    width: 200px;
+    margin-bottom: var(--space-4);
   }
 
   .skills-list {
