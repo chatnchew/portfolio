@@ -104,7 +104,7 @@ h6 { font-size: var(--font-size-lg); }
 [data-font-mode='open-dyslexic'] h3 { font-size: 0.5rem; }
 [data-font-mode='open-dyslexic'] h4 { font-size: 0.25rem; }
 [data-font-mode='open-dyslexic'] h5 { font-size: 0.2rem; }
-[data-font-mode='open-dyslexic'] h6 { font-size: 0.1rem; }
+[data-font-mode='open-dyslexic'] h6 { font-size: 0.2rem; }
 
 p {
   margin-bottom: var(--space-4);
