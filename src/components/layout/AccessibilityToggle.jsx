@@ -16,7 +16,7 @@ const AccessibilityToggle = ({ className }) => {
 
   return (
     <button
-      className={`accessibility-toggle ${className || ''}`}
+      className={`toggle-button accessibility-toggle ${className || ''}`}
       onClick={handleToggle}
       aria-pressed={isOpenDyslexic}
       aria-label={`Switch font to ${isOpenDyslexic ? 'Far Out' : 'Open Dyslexic'}`}

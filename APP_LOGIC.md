@@ -24,6 +24,8 @@ Core flow:
 ### Why this matters
 - Tokens and global styles load before page rendering, so typography, colors, and transitions are consistent across all routes.
 - `globals.css` defines both light and dark theme CSS variables and responds to `data-theme` on the root element.
+- Open Dyslexic font mode reduces heading sizes (`h1`-`h6`) via `data-font-mode` attribute to improve readability.
+- Global accessible design patterns (focus styles, reduced-motion support) are applied consistently.
 
 ## Routing and Layout Logic
 ### `src/App.jsx`
@@ -49,26 +51,41 @@ The router is wrapped by `ThemeProvider`, so all routes can read and update them
 
 ## Global Theme System
 ### `src/contexts/ThemeContext.jsx`
-`ThemeProvider` owns global theme state and behavior.
+`ThemeProvider` owns global theme state and behavior, including both color theme and font accessibility mode.
 
-Initialization order:
+**Color Theme Initialization:**
 1. Read `localStorage.getItem('theme')`.
 2. If not set, check `window.matchMedia('(prefers-color-scheme: dark)')`.
 3. Default to `light`.
 
-On theme changes:
-- Writes `data-theme` on `document.documentElement`.
-- Persists the selected theme in `localStorage`.
+**Font Mode Initialization:**
+- Read `localStorage.getItem('fontMode')`.
+- Default to `far-out` (defaults to Far Out font).
+- Supports `open-dyslexic` for Open Dyslexic accessibility font.
+
+On theme or font mode changes:
+- Writes `data-theme` on `document.documentElement` for color theme.
+- Writes `data-font-mode` on `document.documentElement` for font mode.
+- Persists both preferences in `localStorage`.
 
 Exports:
 - `theme` (`light` or `dark`)
 - `toggleTheme()`
+- `fontMode` (`far-out` or `open-dyslexic`)
+- `toggleFontMode()`
 - `useTheme()` hook with guard that throws if used outside provider.
 
 ### `src/components/layout/ThemeToggle.jsx`
 - Reads `theme` and `toggleTheme` via context.
 - Plays click sound through `useSound`.
 - Updates mode on click with accessible `aria-label`/`title`.
+
+### `src/components/layout/AccessibilityToggle.jsx`
+- Reads `fontMode` and `toggleFontMode` via context.
+- Displays current font selection (Open Dyslexic or Far Out).
+- Plays click sound through `useSound` on toggle.
+- Includes accessible `aria-pressed` and dynamic `aria-label`.
+- Styles are consolidated with ThemeToggle via shared `toggleBase.css`.
 
 ## Sound Interaction System
 ### `src/hooks/useSound.js`
@@ -128,6 +145,7 @@ Project metadata array used by Portfolio and Home page logic:
 - Derives available categories from `projects`.
 - Filters project list by selected category.
 - Renders project cards with optional image and optional live/code links.
+- Project image container has a separate background element (`.project-image-background`) that uses the `--project-image-bg` theme variable for independent styling.
 - Plays click sound for filter changes and external links.
 
 ### Contact (`src/pages/ContactPage.jsx`)
@@ -167,8 +185,12 @@ Implemented patterns aligned with project guidance:
 
 ## Current Implementation Notes
 - Theme persistence and system preference behavior are implemented.
+- Font accessibility toggle (Open Dyslexic vs Far Out) is implemented with localStorage persistence.
+- Open Dyslexic headings are sized proportionally smaller for improved readability.
 - Sound effect playback with user toggle is implemented.
 - Data-driven About, Portfolio, and Contact content is implemented.
+- Portfolio project image backgrounds are separated into dedicated elements with independent theming via `--project-image-bg`.
+- Toggle button styles are consolidated via shared `toggleBase.css` to reduce redundancy.
 - Base reduced-motion support exists globally.
 - Route transition animation logic described in `specDoc.md` is not currently implemented in route components.
 
@@ -177,5 +199,8 @@ When updating this app, prefer this sequence:
 1. Update data content in `src/data/` when text or project metadata changes.
 2. Update page components only for structural/interaction changes.
 3. Keep shared behavior in hooks/context (`useSound`, `ThemeContext`) instead of duplicating page logic.
-4. Verify accessibility for any new interactive element (`aria-label`, keyboard focus, color contrast).
-5. Run `npm run lint` and `npm run build` before merging.
+4. When adding new interactive buttons, inherit from `toggleBase.css` or add to shared styles to avoid redundancy.
+5. When adjusting typography or theme colors, use CSS variables (`--bg-primary`, `--project-image-bg`, etc.) so changes apply globally across themes and modes.
+6. Test both font modes (Far Out and Open Dyslexic) and both color themes (light and dark) when making visual changes.
+7. Verify accessibility for any new interactive element (`aria-label`, `aria-pressed`, keyboard focus, color contrast).
+8. Run `npm run lint` and `npm run build` before merging.

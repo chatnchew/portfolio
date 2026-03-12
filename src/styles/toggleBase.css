@@ -1,0 +1,29 @@
+/* Shared toggle button base styles */
+.toggle-button {
+  background: transparent;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  height: 2.5rem;
+  padding: var(--space-2) var(--space-3);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-button:hover {
+  background-color: var(--bg-secondary);
+  transform: scale(1.05);
+}
+
+.toggle-button:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toggle-button:hover {
+    transform: none;
+  }
+}
