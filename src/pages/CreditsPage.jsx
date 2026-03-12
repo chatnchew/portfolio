@@ -35,6 +35,23 @@ const CreditsPage = () => {
             <p>Custom webfonts used for headers and navigation</p>
             <p>Generated via Font Squirrel Webfont Generator</p>
           </div>
+          <div className="credit-item">
+            <h3>Open Dyslexic</h3>
+            <p><strong>Creator:</strong> Abhijit Dasgupta</p>
+            <p>
+              <strong>Source:</strong>{' '}
+              <a 
+                href="https://opendyslexic.org/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                https://opendyslexic.org/
+              </a>
+            </p>
+            <p>
+              <strong>Purpose:</strong> Accessibility-focused font option for improved readability
+            </p>
+          </div>
         </section>
 
         <section className="credits-section">
