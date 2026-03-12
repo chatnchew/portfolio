@@ -2,6 +2,7 @@
   background: transparent;
   border: 2px solid var(--border-color);
   border-radius: var(--radius-md);
+  height: 2.5rem;
   padding: var(--space-2) var(--space-3);
   font-size: var(--font-size-xl);
   cursor: pointer;
