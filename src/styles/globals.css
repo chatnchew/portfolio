@@ -30,6 +30,7 @@
   /* Light Mode (Default) */
   --bg-primary: #ffffff;
   --bg-secondary: #f8f9fa;
+  --project-image-bg: #ffffff;
   --text-primary: #212529;
   --text-secondary: #6c757d;
   --text-muted: #adb5bd;
@@ -46,6 +47,7 @@
   /* Dark Mode */
   --bg-primary: #161616;
   --bg-secondary: #343a40;
+  --project-image-bg: #7e7e7e;
   --text-primary: #f8f9fa;
   --text-secondary: #adb5bd;
   --text-muted: #6c757d;
