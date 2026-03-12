@@ -41,7 +41,7 @@ const siteContent = {
           "Mobilized a team of 12 corporate insurance account representatives during a departmental transformation, reducing turn over and retaining 80% of the team.",
       },
       {
-        title: "Part-Time Operations Researche",
+        title: "Part-Time Operations Researcher",
         company: "Brickhaus3 LLC",
         period: "2024 - Present",
         description:
