@@ -13,7 +13,19 @@
   gap: var(--space-4);
 }
 
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .header-theme-toggle {
+  flex-shrink: 0;
+}
+
+.header-accessibility-toggle {
   flex-shrink: 0;
 }
 
@@ -25,5 +37,9 @@
   .header-container {
     flex-direction: column;
     gap: var(--space-3);
+  }
+
+  .header-controls {
+    width: 100%;
   }
 }

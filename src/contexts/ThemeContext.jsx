@@ -1,7 +1,6 @@
-import { createContext, useState, useEffect, useContext } from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-
-const ThemeContext = createContext();
+import ThemeContext from './themeContextObject';
 
 export const ThemeProvider = ({ children }) => {
   // Initialize theme from localStorage or system preference
@@ -17,6 +16,11 @@ export const ThemeProvider = ({ children }) => {
     return 'light';
   });
 
+  const [fontMode, setFontMode] = useState(() => {
+    const savedFontMode = localStorage.getItem('fontMode');
+    return savedFontMode === 'open-dyslexic' ? 'open-dyslexic' : 'far-out';
+  });
+
   useEffect(() => {
     // Apply theme to document
     document.documentElement.setAttribute('data-theme', theme);
@@ -24,12 +28,21 @@ export const ThemeProvider = ({ children }) => {
     localStorage.setItem('theme', theme);
   }, [theme]);
 
+  useEffect(() => {
+    document.documentElement.setAttribute('data-font-mode', fontMode);
+    localStorage.setItem('fontMode', fontMode);
+  }, [fontMode]);
+
   const toggleTheme = () => {
     setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
   };
 
+  const toggleFontMode = () => {
+    setFontMode(prevFontMode => prevFontMode === 'far-out' ? 'open-dyslexic' : 'far-out');
+  };
+
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme, fontMode, toggleFontMode }}>
       {children}
     </ThemeContext.Provider>
   );
@@ -37,12 +50,4 @@ export const ThemeProvider = ({ children }) => {
 
 ThemeProvider.propTypes = {
   children: PropTypes.node.isRequired,
-};
-
-export const useTheme = () => {
-  const context = useContext(ThemeContext);
-  if (!context) {
-    throw new Error('useTheme must be used within a ThemeProvider');
-  }
-  return context;
 };

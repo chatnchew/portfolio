@@ -22,9 +22,12 @@
   --font-size-5xl: 3rem;     /* 48px */
 
   /* Font Families */
-  --font-header: 'far_outregular', Arial, sans-serif;
-  --font-nav: 'far_outregular', Arial, sans-serif;
-  --font-body: Arial, Helvetica, sans-serif;
+  --font-display-default: 'far_outregular', Arial, sans-serif;
+  --font-accessible: 'OpenDyslexic', Arial, sans-serif;
+  --font-body-default: Arial, Helvetica, sans-serif;
+  --font-header: var(--font-display-default);
+  --font-nav: var(--font-display-default);
+  --font-body: var(--font-body-default);
 
   /* Border Radius */
   --radius-sm: 0;
@@ -41,4 +44,9 @@
   --transition-fast: 150ms ease;
   --transition-base: 200ms ease;
   --transition-slow: 300ms ease;
+}
+
+[data-font-mode='open-dyslexic'] {
+  --font-header: var(--font-accessible);
+  --font-nav: var(--font-accessible);
 }

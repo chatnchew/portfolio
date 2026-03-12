@@ -1,4 +1,5 @@
 import NavMenu from './NavMenu';
+import AccessibilityToggle from './AccessibilityToggle';
 import ThemeToggle from './ThemeToggle';
 import './Header.css';
 
@@ -7,7 +8,10 @@ const Header = () => {
     <header className="site-header">
       <div className="header-container">
         <NavMenu />
-        <ThemeToggle className="header-theme-toggle" />
+        <div className="header-controls">
+          <AccessibilityToggle className="header-accessibility-toggle" />
+          <ThemeToggle className="header-theme-toggle" />
+        </div>
       </div>
     </header>
   );

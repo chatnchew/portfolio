@@ -1,6 +1,6 @@
 import siteContent from '../data/siteContent';
 import useSound from '../hooks/useSound';
-import { useTheme } from '../contexts/ThemeContext';
+import useTheme from '../hooks/useTheme';
 import carynPortrait from '../assets/images/caryn portrait.PNG';
 import carynPortraitDark from '../assets/images/caryn portrait darkmode.PNG';
 import './AboutResumePage.css';

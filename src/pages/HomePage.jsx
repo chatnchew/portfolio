@@ -1,20 +1,11 @@
-import { Link } from 'react-router-dom';
 import siteContent from '../data/siteContent';
-import projects from '../data/projects';
 import logo from '../assets/images/caryn harris logo.png';
 import logoDark from '../assets/images/caryn harris logo darkmode.png';
-import useSound from '../hooks/useSound';
-import { useTheme } from '../contexts/ThemeContext';
+import useTheme from '../hooks/useTheme';
 import './HomePage.css';
 
 const HomePage = () => {
-  const { playClickSound } = useSound();
   const { theme } = useTheme();
-  const featuredProjects = projects.filter(p => p.featured).slice(0, 3);
-
-  const handleLinkClick = () => {
-    playClickSound();
-  };
 
   return (
     <div className="home-page">

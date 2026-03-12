@@ -1,5 +1,13 @@
 /* Font Face Declarations */
 @font-face {
+  font-family: 'OpenDyslexic';
+  src: url('../assets/fonts/OpenDyslexic-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'disclaimerplain';
   src: url('../assets/fonts/disclaimer-plain-webfont.woff2') format('woff2'),
        url('../assets/fonts/disclaimer-plain-webfont.woff') format('woff');
