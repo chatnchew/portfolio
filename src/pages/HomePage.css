@@ -15,7 +15,8 @@
   width: 100%;
 }
 
-.hero-section {
+.hero-section,
+.featured-projects {
   margin-bottom: var(--space-8);
 }
 
@@ -48,10 +49,6 @@
 
 html[data-font-mode='open-dyslexic'] .hero-subtitle {
   font-size: var(--font-size-lg);
-}
-
-.featured-projects {
-  margin-bottom: var(--space-8);
 }
 
 .featured-projects h2 {
@@ -165,10 +162,6 @@ html[data-font-mode='open-dyslexic'] .hero-subtitle {
 
   html[data-font-mode='open-dyslexic'] .hero-title {
     font-size: var(--font-size-3xl);
-  }
-
-  html[data-font-mode='open-dyslexic'] .hero-subtitle {
-    font-size: var(--font-size-lg);
   }
 
   .project-cards {
