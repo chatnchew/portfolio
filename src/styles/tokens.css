@@ -24,7 +24,7 @@
   /* Font Families */
   --font-display-default: 'far_outregular', Arial, sans-serif;
   --font-accessible: 'OpenDyslexic', Arial, sans-serif;
-  --font-body-default: Arial, Helvetica, sans-serif;
+  --font-body-default: 'Prompt', Arial, Helvetica, sans-serif;
   --font-header: var(--font-display-default);
   --font-nav: var(--font-display-default);
   --font-body: var(--font-body-default);
