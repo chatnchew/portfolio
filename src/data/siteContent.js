@@ -1,9 +1,9 @@
 const siteContent = {
   hero: {
     title: "Caryn Harris",
-    subtitle: "Artist, Software Developer, Life-Long Learner",
+    subtitle: "Artist - Software Developer - Life-Long Learner",
     intro:
-      "Creating innovative web experiences with a focus on user-centered design and clean, efficient code.",
+      "Creating user-centered design and clean, efficient code that translates business needs into tangible results.",
   },
   about: {
     bio: [
