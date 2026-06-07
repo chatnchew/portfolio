@@ -46,6 +46,10 @@
   margin: 0 auto;
 }
 
+html[data-font-mode='open-dyslexic'] .hero-subtitle {
+  font-size: var(--font-size-lg);
+}
+
 .featured-projects {
   margin-bottom: var(--space-8);
 }
@@ -157,6 +161,14 @@
 
   .hero-subtitle {
     font-size: var(--font-size-xl);
+  }
+
+  html[data-font-mode='open-dyslexic'] .hero-title {
+    font-size: var(--font-size-3xl);
+  }
+
+  html[data-font-mode='open-dyslexic'] .hero-subtitle {
+    font-size: var(--font-size-lg);
   }
 
   .project-cards {
