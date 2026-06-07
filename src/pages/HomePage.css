@@ -32,7 +32,6 @@
 }
 
 .hero-subtitle {
-  font-family: var(--font-display-default);
   font-size: var(--font-size-2xl);
   color: black;
   margin-bottom: var(--space-4);

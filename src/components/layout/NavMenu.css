@@ -22,6 +22,10 @@
   padding: var(--space-2);
 }
 
+html[data-font-mode='open-dyslexic'] .nav-menu a {
+  font-size: var(--font-size-base);
+}
+
 .nav-menu a:hover {
   color: var(--link-color);
   transform: scale(1.05);

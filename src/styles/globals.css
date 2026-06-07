@@ -99,8 +99,8 @@ h4 { font-size: var(--font-size-2xl); }
 h5 { font-size: var(--font-size-xl); }
 h6 { font-size: var(--font-size-lg); }
 
-html[data-font-mode='open-dyslexic'] h1 { font-size: 1.75rem; }
-html[data-font-mode='open-dyslexic'] h2 { font-size: 1.5rem; }
+html[data-font-mode='open-dyslexic'] h1 { font-size: 1.5rem; }
+html[data-font-mode='open-dyslexic'] h2 { font-size: 1rem; }
 html[data-font-mode='open-dyslexic'] h3 { font-size: 1.25rem; }
 html[data-font-mode='open-dyslexic'] h4 { font-size: 1rem; }
 html[data-font-mode='open-dyslexic'] h5 { font-size: 0.75rem; }
