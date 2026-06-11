@@ -70,7 +70,7 @@ const AboutResumePage = () => {
           {siteContent.about.education.map((edu, index) => (
             <div key={index} className="education-item">
               <h3>{edu.degree}</h3>
-              <p>{edu.institution} | {edu.year}</p>
+              <p>{edu.institution}</p>
             </div>
           ))}
         </section>

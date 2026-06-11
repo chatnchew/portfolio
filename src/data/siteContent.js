@@ -1,9 +1,9 @@
 const siteContent = {
   hero: {
     title: "Caryn Harris",
-    subtitle: "Artist - Software Developer - Life-Long Learner",
+    subtitle: "Designer - Software Engineer - Life-Long Learner",
     intro:
-      "Creating user-centered design and clean, efficient code that translates business needs into tangible results.",
+      "Designing user-centered experiences and clean, efficient code that translates business needs into tangible results.",
   },
   about: {
     bio: [
@@ -41,9 +41,9 @@ const siteContent = {
           "Mobilized a team of 12 corporate insurance account representatives during a departmental transformation, reducing turn over and retaining 80% of the team.",
       },
       {
-        title: "Part-Time Operations Researcher",
+        title: "Operations Researcher",
         company: "Brickhaus3 LLC",
-        period: "2024 - Present",
+        period: "2025 - Present",
         description:
           "Authored communications with event planners, cigar lounge owners, entertainment companies and other related businesses to contribute to the growth of the organization, resulting in a 100% increase in paid events.",
       },
@@ -52,17 +52,14 @@ const siteContent = {
       {
         degree: "Full Stack Software Development - Certificate",
         institution: "Austin Community College",
-        year: "2026",
       },
       {
         degree: "2D Animation - Associates of Applied Science",
         institution: "Austin Community College",
-        year: "2023",
       },
       {
         degree: "French - Bachelor of Arts",
         institution: "St. Edward's University",
-        year: "2019",
       },
     ],
     resumeUrl: "/assets/Caryn Harris 2026.pdf",
